@@ -1,3 +1,9 @@
 Notes on LearnQt5
 -----------------
 
+20181022
+--------
+Start Kapitel 02 - Project Structure
+
+
+Kapitel 01 - Hello Qt
