@@ -3,7 +3,13 @@
 
 #include <QtCore/QObject>
 
-class MasterController : public QObject
+#include <cm-lib_global.h>
+
+namespace cm {
+namespace controllers {
+
+
+class CMLIBSHARED_EXPORT MasterController : public QObject
 {
     Q_OBJECT
 public:
@@ -13,5 +19,9 @@ signals:
 
 public slots:
 };
+
+}//end namespace controllers
+}//end namespace cm
+
 
 #endif // MASTERCONTROLLER_H

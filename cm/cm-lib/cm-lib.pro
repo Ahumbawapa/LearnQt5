@@ -23,10 +23,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 INCLUDEPATH += source
 
-SOURCES += source/models/client.cpp
+SOURCES += source/models/client.cpp \
+    source/controllers/mastercontroller.cpp
 
 HEADERS += source/cm-lib_global.h \
-    source/models/client.h
+    source/models/client.h \
+    source/controllers/mastercontroller.h
 
 unix {
     target.path = /usr/lib
