@@ -9,3 +9,5 @@ CONFIG -= app_bundle
 
 INCLUDEPATH += source
 SOURCES +=  source/models/tst_clienttests.cpp
+
+message(cm-tests project dir: $${PWD})

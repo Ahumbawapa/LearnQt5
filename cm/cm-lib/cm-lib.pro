@@ -34,3 +34,7 @@ unix {
     target.path = /usr/lib
     INSTALLS += target
 }
+
+#!build_pass verhindert mehrfache Ausgabe der Nachricht
+#!build_pass:message(cm-lib project dir: $${PWD})
+message(cm-lib project dir: $${PWD})
