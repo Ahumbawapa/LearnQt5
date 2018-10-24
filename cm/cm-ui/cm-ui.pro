@@ -25,7 +25,7 @@ SOURCES += \
 
 RESOURCES += views.qrc
 
-LIBS += -L$$PWD/../../build-cm-Desktop_Qt_5_11_1_MinGW_32bit-Debug/cm-lib/debug -lcm-lib
+LIBS += -L$$PWD/../binaries/$$DESTINATION_PATH -lcm-lib
 
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
@@ -41,3 +41,10 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 
 message(cm-ui project dir: $${PWD})
+DESTDIR     = $$PWD/../binaries/$$DESTINATION_PATH
+OBJECTS_DIR = $$PWD/build/$$DESTINATION_PATH/.obj
+MOC_DIR     = $$PWD/build/$$DESTINATION_PATH/.moc
+RCC_DIR     = $$PWD/build/$$DESTINATION_PATH/.qrc
+UI_DIR      = $$PWD/build/$$DESTINATION_PATH/.ui
+
+message(cm-ui output dir: $${DESTDIR})

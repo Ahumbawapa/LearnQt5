@@ -4,6 +4,7 @@ message(qmake-destination-path.pri)
 message(--------------------------)
 
 #construct the destination path
+#creating hierachical structure OPERATINGSYSTEM > COMPILER > PROCESSOR ARCHITECTUR > BUILD CONFIGURATION
 platform_path = unknown-platform
 compiler_path = unknown-compiler
 processor_path = unknown-processor
@@ -43,5 +44,5 @@ BUILD_DEBUG {
 }
 
 DESTINATION_PATH = $$platform_path/$$compiler_path/$$processor_path/$$build_path
-message(Destination path: $${DESTINATION_PATH}
+message(Destination path: $${DESTINATION_PATH})
 

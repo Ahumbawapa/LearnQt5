@@ -40,7 +40,14 @@ unix {
 
 #!build_pass verhindert mehrfache Ausgabe der Nachricht
 #!build_pass:message(cm-lib project dir: $${PWD})
+
+
 message(cm-lib project dir: $${PWD})
-#creating hierachical structure OPERATINGSYSTEM > COMPILER > PROCESSOR ARCHITECTUR > BUILD CONFIGURATION
-DESTDIR = $$PWD/../binaries/windows/gcc/x86/debug
+
+DESTDIR     = $$PWD/../binaries/$$DESTINATION_PATH
+OBJECTS_DIR = $$PWD/build/$$DESTINATION_PATH/.obj
+MOC_DIR     = $$PWD/build/$$DESTINATION_PATH/.moc
+RCC_DIR     = $$PWD/build/$$DESTINATION_PATH/.qrc
+UI_DIR      = $$PWD/build/$$DESTINATION_PATH/.ui
+
 message(cm-lib output dir: $${DESTDIR})
