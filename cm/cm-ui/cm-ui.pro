@@ -1,3 +1,7 @@
+include(../qmake-target-platform.pri)
+include(../qmake-destination-path.pri)
+
+
 QT += quick qml
 TEMPLATE = app
 CONFIG += c++14

@@ -4,6 +4,9 @@
 #
 #-------------------------------------------------
 
+include(../qmake-target-platform.pri)
+include(../qmake-destination-path.pri)
+
 QT       -= gui
 TARGET = cm-lib
 TEMPLATE = lib

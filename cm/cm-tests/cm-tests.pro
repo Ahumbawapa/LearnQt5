@@ -1,3 +1,7 @@
+include(../qmake-target-platform.pri)
+include(../qmake-destination-path.pri)
+
+
 QT += testlib
 QT -= gui
 TARGET = client-tests
